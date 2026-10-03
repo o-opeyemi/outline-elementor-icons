@@ -1,0 +1,28 @@
+name: Build plugin
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      LEI_OUTPUT_DIR: ${{ runner.temp }}/lucide-elementor-icons-dist
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run package
+      - run: php -l lucide-elementor-icons.php
+      - name: Validate installable ZIP
+        run: unzip -t "$LEI_OUTPUT_DIR/lucide-elementor-icons.zip"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lucide-elementor-icons
+          path: ${{ runner.temp }}/lucide-elementor-icons-dist/lucide-elementor-icons.zip
+          if-no-files-found: error

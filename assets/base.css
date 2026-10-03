@@ -1,0 +1,11 @@
+/* Outline SVGs inherit Elementor's color and size controls. */
+.elementor-icon svg.lei-svg,
+.elementor-icon-list-icon svg.lei-svg,
+svg.lei-svg {
+  fill: none;
+  stroke: currentColor;
+}
+svg.lei-svg {
+  display: inline-block;
+  vertical-align: middle;
+}
