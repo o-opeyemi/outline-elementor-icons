@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: Lucide Icons for Elementor
+ * Plugin URI: https://github.com/o-opeyemi/lucide-elementor-icons
  * Description: Add 1,800+ clean outline icons to Elementor's existing icon picker. Search and insert scalable Lucide SVGs, style them with Elementor's color and size controls, and build consistent designs without a CDN, API key, or separate icon uploads.
  * Version: 1.0.0
  * Author: Opeyemi Ogunsanya

@@ -80,6 +80,8 @@ by the Lucide or Elementor projects.
 
 = Build source =
 
+Development repository: https://github.com/o-opeyemi/lucide-elementor-icons
+
 The plugin includes its readable PHP source, npm dependency manifest and
 lockfile, and build scripts. Developer build instructions are in README.md.
 Node.js and npm are needed only to rebuild the icon library, not to use the

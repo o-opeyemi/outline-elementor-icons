@@ -2,8 +2,7 @@
 
 Author: [Opeyemi Ogunsanya](https://opeyemiweb.dev)
 
-Repository URL: `https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
-(demo placeholder — replace with the real repository URL before publication).
+Repository: [lucide-elementor-icons](https://github.com/o-opeyemi/lucide-elementor-icons)
 
 A WordPress plugin adding Lucide to Elementor's existing icon picker.
 Icons are bundled locally, searchable, and inherit Elementor color/size controls.
