@@ -1,4 +1,4 @@
-=== Lucide Icons for Elementor ===
+=== Outline Icons for Elementor ===
 Tags: elementor, lucide, icons, svg
 Requires at least: 6.5
 Tested up to: 7.1
@@ -67,6 +67,8 @@ not something performed by the plugin on your WordPress server.
 
 = Credits and licensing =
 
+This plugin uses Lucide icons and is an independent integration for Elementor.
+
 Plugin code is licensed under GPLv2 or later. Lucide icons retain their ISC
 license, and Feather-derived icons retain their MIT notices. The complete
 upstream notices are included in licenses/LUCIDE.txt. These licenses permit
@@ -89,8 +91,8 @@ installed WordPress plugin.
 
 == Installation ==
 1. Install and activate Elementor.
-2. Upload lucide-elementor-icons.zip under Plugins > Add New > Upload Plugin.
-3. Activate Lucide Icons for Elementor.
+2. Upload outline-icons-for-elementor.zip under Plugins > Add New > Upload Plugin.
+3. Activate Outline Icons for Elementor.
 4. Open an Elementor icon selector, choose Lucide, search, and insert an icon.
 
 == Frequently Asked Questions ==

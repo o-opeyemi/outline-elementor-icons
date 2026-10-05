@@ -23,11 +23,11 @@ async function walk(dir) {
   }
   return files;
 }
-const files = ['lucide-elementor-icons.php', 'readme.txt', 'LICENSE', 'README.md', 'package.json', 'package-lock.json', ...await walk('assets'), ...await walk('licenses'), ...await walk('scripts'), ...await walk('tests')];
+const files = ['outline-icons-for-elementor.php', 'readme.txt', 'LICENSE', 'README.md', 'package.json', 'package-lock.json', ...await walk('assets'), ...await walk('licenses'), ...await walk('scripts'), ...await walk('tests')];
 const local = [], central = [];
 let offset = 0;
 for (const file of files) {
-  const name = Buffer.from(`lucide-elementor-icons/${file}`);
+  const name = Buffer.from(`outline-icons-for-elementor/${file}`);
   const bytes = await readFile(path.join(root, file));
   const compressed = deflateRawSync(bytes);
   const crc = crc32(bytes);
@@ -62,12 +62,12 @@ end.writeUInt16LE(files.length, 8);
 end.writeUInt16LE(files.length, 10);
 end.writeUInt32LE(directory.length, 12);
 end.writeUInt32LE(offset, 16);
-const outputDir = path.resolve(process.env.LEI_OUTPUT_DIR || path.join(os.tmpdir(), 'lucide-elementor-icons-dist'));
+const outputDir = path.resolve(process.env.LEI_OUTPUT_DIR || path.join(os.tmpdir(), 'outline-icons-for-elementor-dist'));
 const relativeOutput = path.relative(root, outputDir);
 if (!relativeOutput || (!relativeOutput.startsWith(`..${path.sep}`) && relativeOutput !== '..' && !path.isAbsolute(relativeOutput))) {
   throw new Error('LEI_OUTPUT_DIR must be outside the plugin folder to avoid Plugin Check compressed_files errors.');
 }
 await mkdir(outputDir, { recursive: true });
-const outputFile = path.join(outputDir, 'lucide-elementor-icons.zip');
+const outputFile = path.join(outputDir, 'outline-icons-for-elementor.zip');
 await writeFile(outputFile, Buffer.concat([...local, directory, end]));
 console.log(`Created ${outputFile}`);

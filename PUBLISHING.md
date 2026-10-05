@@ -12,12 +12,13 @@ Sources:
 
 ## Remaining preparation
 
-Choose original branding before submission. The current name starts with
-Lucide, another project's name; WordPress.org restricts slugs beginning with
-another project's term. A structure such as “YOUR BRAND — Outline Icons for
-Elementor” would distinguish ownership. Name availability has not been checked.
-After choosing it, align the PHP name, readme title, folder/slug, text domain,
-package output, and documentation before submitting. Do not invent contributors.
+The selected display name is Outline Icons for Elementor.
+The distribution slug and text domain are `outline-icons-for-elementor`.
+Lucide attribution and an independent-integration notice appear in readme.txt.
+The reviewer has also raised distinctiveness: this descriptive name may still
+require revision or approval. Confirm the slug in the pending submission; local
+changes do not update the WordPress.org submission record.
+The GitHub repository URL remains unchanged.
 
 Add your real WordPress.org username to `Contributors:` in `readme.txt` and
 your author name to the PHP header. Add a real repository/support URL if desired.

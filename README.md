@@ -1,8 +1,8 @@
-# Lucide Icons for Elementor
+# Outline Icons for Elementor
 
 Author: [Opeyemi Ogunsanya](https://opeyemiweb.dev)
 
-Repository: [lucide-elementor-icons](https://github.com/o-opeyemi/lucide-elementor-icons)
+Repository: [outline-icons-for-elementor](https://github.com/o-opeyemi/lucide-elementor-icons)
 
 A WordPress plugin adding Lucide to Elementor's existing icon picker.
 Icons are bundled locally, searchable, and inherit Elementor color/size controls.
@@ -12,7 +12,7 @@ extra widgets. Requires WordPress 6.5+, PHP 7.4+, and Elementor.
 
 ## Install
 
-Upload the generated `lucide-elementor-icons.zip` under **Plugins → Add New → Upload Plugin**,
+Upload the generated `outline-icons-for-elementor.zip` under **Plugins → Add New → Upload Plugin**,
 activate it, and open the **Lucide** tab in an Elementor icon selector.
 Alternatively, this source folder is itself an installable plugin when its
 generated `assets/` and `licenses/` folders are present.
@@ -28,7 +28,7 @@ npm run package
 
 This rebuilds assets from `lucide-static`, checks the catalog and SVG safety,
 and produces a WordPress ZIP in your system temporary directory under
-`lucide-elementor-icons-dist/`. The build prints its full path. Set
+`outline-icons-for-elementor-dist/`. The build prints its full path. Set
 `LEI_OUTPUT_DIR` to choose another directory outside the plugin folder.
 Keeping ZIPs outside the installed plugin prevents Plugin Check's
 `compressed_files` error. Commit `package.json`,
