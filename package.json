@@ -9,7 +9,7 @@
     "package": "npm run build && npm test && node scripts/package.mjs"
   },
   "devDependencies": {
-    "lucide-static": "1.50.0"
+    "lucide-static": "1.65.0"
   },
   "engines": { "node": ">=22" }
 }
